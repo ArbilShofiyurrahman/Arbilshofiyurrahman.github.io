@@ -1,0 +1,181 @@
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  body{
+    background: linear-gradient(blue, white, yellow);
+  }  
+  nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+     
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+     
+  .logo img {
+       height: 50px;
+       margin-right: 10px;
+  }
+     
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+     
+  nav ul li {
+    margin: 0 10px;
+  }
+     
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+     
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px; /* menambahkan margin pada body agar konten tidak tertutup oleh header */
+  
+  }
+  .maps{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .kbs{
+    margin-top: 15px;
+    position: absolute;
+    background-color: aliceblue;
+    height: 413px;
+    width: 340px;
+    margin-left: 850px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .kbs img{
+    width: 50px;
+    height: 50px;
+
+  }
+
+  main {
+    margin: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+       margin-top: 2cm;
+       background-color: #333;
+       color: #fff;
+       padding: 10px;
+       text-align: center;
+  }
+  @media only screen and (max-width: 620px) {
+    header {
+      height: auto;
+      flex-direction: column;
+      padding: 10px;
+    }
+    
+    nav {
+      height: auto;
+      flex-direction: row; /* Perubahan: flex-direction menjadi row */
+      justify-content: space-between; /* Perubahan: menambahkan justify-content */
+      align-items: center;
+      padding: 1px;
+    }
+    
+    .logo img {
+      height: 40px;
+    }
+    
+    nav ul {
+      flex-direction: row; /* Perubahan: flex-direction menjadi row */
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    .content {
+      order: 1; /* Perubahan: mengatur urutan elemen menjadi 1 */
+    }
+    
+    body {
+      min-height: 150vh; /* Menentukan tinggi minimum halaman lebih besar dari tinggi viewport */
+    }
+  
+    .sidebar {
+      
+      margin-right: 10cm;
+      order: 2; /* Perubahan: mengatur urutan elemen menjadi 2 */
+    }
+    .maps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .maps iframe {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .kbs {
+      margin-top: 15px;
+      position: static;
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }

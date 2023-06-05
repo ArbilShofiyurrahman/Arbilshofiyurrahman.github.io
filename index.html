@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Puncak Ratu</title>
+     <link rel="stylesheet" href="Asset/css/berandaAsli.css">
+</head>
+<body>
+     <div class="container">
+          <header>
+               <div class="logo">
+                    <a style="text-decoration:none" href="index.html">
+                         <h1>Puncak ratu</h1>
+                    </a>
+               </div>
+               <div class="sidebar" id="sidebar">
+                    <nav>
+                         <ul>
+                              <li><a id="box" onmouseover="mouseOver('box', 'red')" onmouseout="mouseOut('box')" href="index.html">Home</a></li>
+                              <li><a id="box1" onmouseover="mouseOver('box1', 'red')" onmouseout="mouseOut('box1')" href="NF.html">Event</a></li>
+                              <li><a id="box2" onmouseover="mouseOver('box2', 'red')" onmouseout="mouseOut('box2')" href="about.html">About</a></li>
+                              <li><a id="box3" onmouseover="mouseOver('box3', 'red')" onmouseout="mouseOut('box3')" href="galeri.html">Gallery</a></li>
+                              <li><a id="box4" onmouseover="mouseOver('box4', 'red')" onmouseout="mouseOut('box4')" href="contact.html">Contact</a></li>
+                         </ul>
+                    </nav>
+               </div>
+               <div class="arrow" id="arrowBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="white" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75Zm0 4A.75.75 0 0 1 2.75 7h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 7.75Zm0 4a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"/></svg>
+               </div>
+          </header>
+          <main>
+               <div id="blank"></div>
+               <div class="wrapper">
+                    <div class="carousel">
+                         <div class="slider">
+                           <div class="slides">
+                               <input type="radio" name="radio-btn" class="radio" id="radio1">
+                               <input type="radio" name="radio-btn" class="radio" id="radio2">
+                               <input type="radio" name="radio-btn" class="radio" id="radio3">
+                   
+                               <div class="slide first">
+                                   <img src="Asset/foto/pc1.jpg" alt="">
+                               </div>
+                               <div class="slide">
+                                   <img src="Asset/foto/pc3.jpg" alt="">
+                               </div>
+                               <div class="slide">
+                                   <img src="Asset/foto/pc4.jpg" alt="">
+                               </div>
+                           </div>   
+                       </div>
+                       <div class="navigation-auto">
+                           <div class="auto-btn-1"></div>
+                           <div class="auto-btn-2"></div>
+                           <div class="auto-btn-3"></div>
+                       </div>
+                   
+                       <div class="navigation-manual">
+                           <label for="radio1" class="manual-btn"></label>
+                           <label for="radio2" class="manual-btn"></label>
+                           <label for="radio3" class="manual-btn"></label>
+                       </div>
+                   
+                       <div class="information">
+                           <h3>PRAKTIKUM DPW</h3>
+                           <h3>Teknik Informatika UTM</h3>
+                           <button id="detailButton"><a href="galeri.html">Detail</a></button>
+                       </div>
+                       <div class="artikel">
+                            <aside>
+                                 <form id="myForm" onsubmit="submitForm(event)">
+                                      <input type="text" id="inputText" name="inputText" placeholder="Cari...">
+                                      <button id="myButton" value="Submit">Submit</button>
+                                 </form>
+                             
+                                 <h3>Artikel Populer</h3>
+                                 <ul>
+                                      <li><a id="box5" onmouseover="mouseOver('box5', 'red')" onmouseout="mouseOut('box5')" href="NF.html">Event</a></li>
+                                      <li><a id="box6" onmouseover="mouseOver('box6', 'red')" onmouseout="mouseOut('box6')" href="about.html">About</a></li>
+                                      <li><a id="box7" onmouseover="mouseOver('box7', 'red')" onmouseout="mouseOut('box7')" href="galeri.html">Gallery</a></li>
+                                      <li><a id="box8" onmouseover="mouseOver('box8', 'red')" onmouseout="mouseOut('box8')" href="contact.html">Contact</a></li>
+                                 </ul>
+                            </aside>
+                       </div>
+                    </div>
+               </div> 
+          </main>
+          <div class="main-content">
+               <article>
+                   <h1 onmouseover="change()" onmouseout="changeBack()">Selamat Datang Di Website Demo Puncak Ratu. </h1>
+                   <p>Perlu kita ketahui, di Era global semua serba online dimana internet sangat dibutuhkan, di masa internet ini website merupakan sebuah kebutuhan penting di sebuah instansi baik instansi pemerintah maupun instansi swasta, karena website dapat memberikan informasi kepada masyarakat tanpa adanya batasan jarak dan waktu. Pada website ini kami akan memberikan seputar informasi wisata yang populer di Pamekasan, yakni Puncak Ratu Pegantenan Pamekasan Madura</p>
+                   
+               </article>
+               <aside>
+                   <div class="kotak">
+                       <img onmouseover="filter()" onmouseout="filterBack()" class="img-big" src="Asset/foto/pc1.jpg" alt="">
+                   </div>
+               </aside>
+           </div>
+          
+
+     </div>
+
+     <footer>
+          <h5>Copyright Arbil Shofiyurrahman - 2023</h5>
+      </footer>
+     
+          <script src="Asset/js/beranda.js"></script>
+</body>
+</html>

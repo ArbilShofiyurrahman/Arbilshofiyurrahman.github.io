@@ -1,0 +1,173 @@
+header {
+	background-color: rgba(51, 51, 51, 0.5);
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+   }
+   
+   body{
+    background: linear-gradient(blue, white, yellow);
+  }
+nav {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+   
+.logo {
+	display: flex;
+	align-items: center;
+}
+   
+.logo img {
+	height: 50px;
+	margin-right: 10px;
+}
+   
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+   
+nav ul li {
+	margin: 0 10px;
+}
+   
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+   
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding-top: 70px; /* menambahkan margin pada body agar konten tidak tertutup oleh header */
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 24px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+.upcoming-event {
+    text-align: center;
+    margin-top: 40px;
+    color: black; /* Menjadikan font putih */
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .countdown-item {
+    margin: 1 4px;
+  }
+  
+  .countdown-item span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .countdown-item span:last-child {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+@media only screen and (max-width: 620px) {
+	header {
+	  height: auto;
+	  flex-direction: column;
+	  padding: 10px;
+	}
+	
+	body {
+		overflow-y: 30%;
+	  }
+
+	nav {
+	  height: auto;
+	  flex-direction: row; /* Perubahan: flex-direction menjadi row */
+	  justify-content: space-between; /* Perubahan: menambahkan justify-content */
+	  align-items: center;
+	  padding: 10px;
+	}
+	
+	.logo img {
+	  height: 40px;
+	}
+	
+	nav ul {
+	  flex-direction: row; /* Perubahan: flex-direction menjadi row */
+	  align-items: center;
+	  flex-wrap: nowrap;
+	}
+	
+	nav ul li {
+	  margin: 0 2px;
+	}
+	
+	.content {
+	  order: 1; /* Perubahan: mengatur urutan elemen menjadi 1 */
+	}
+	
+	body {
+	  min-height: 150vh; /* Menentukan tinggi minimum halaman lebih besar dari tinggi viewport */
+	}
+  
+	.sidebar {
+	  
+	  margin-right: 10cm;
+	  order: 2; /* Perubahan: mengatur urutan elemen menjadi 2 */
+	}
+
+	.container h1 {
+		font-size: 24px;
+	  }
+	  
+	  .container p {
+		font-size: 18px;
+	  }
+	  footer {
+		padding-bottom: 10px; /* Mengurangi padding-bottom pada layar dengan lebar 620px atau lebih kecil */
+	  }
+  }

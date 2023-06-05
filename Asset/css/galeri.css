@@ -1,0 +1,188 @@
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  body{
+    background: linear-gradient(blue, white, yellow);
+  }
+  nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px; /* menambahkan margin pada body agar konten tidak tertutup oleh header */
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin: 20px;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+  }
+  
+  .popup-image {
+    max-width: 700px;
+    max-height: 500px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .prev-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .next-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .gallery img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media only screen and (max-width: 620px) {
+    header {
+      height: auto;
+      flex-direction: column;
+      padding: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  
+    nav {
+      height: auto;
+      flex-direction: row; /* Perubahan: flex-direction menjadi row */
+      justify-content: space-between; /* Perubahan: menambahkan justify-content */
+      align-items: center;
+      padding: 1px;
+    }
+    
+    .logo img {
+      height: 40px;
+    }
+    
+    nav ul {
+      flex-direction: row; /* Perubahan: flex-direction menjadi row */
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    
+    nav ul li {
+      margin: 0 10px;
+    }
+    
+    .content {
+      order: 1; /* Perubahan: mengatur urutan elemen menjadi 1 */
+    }
+    
+    body {
+      min-height: 150vh; /* Menentukan tinggi minimum halaman lebih besar dari tinggi viewport */
+    }
+  
+    .sidebar {
+      
+      margin-right: 10cm;
+      order: 2; /* Perubahan: mengatur urutan elemen menjadi 2 */
+    }
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+  
